@@ -639,7 +639,7 @@
 	.coin-wrap {
 		height: 690px;
 		overflow-y: auto;
-		background-color: #FFF
+		/* background-color: #FFF */
 	}
 
 	.coin-wrap li p:nth-child(even) {
@@ -709,7 +709,7 @@
 	.coin-wrap li p {
 		overflow: hidden;
 		padding: 0px 0;
-		background-color: #171b2b;
+		/* background-color: #171b2b; */
 	}
 
 	.active_p {
@@ -718,13 +718,13 @@
     
 	/*滚动条样式*/
 	.theScroll::-webkit-scrollbar{
-		width: 4px;
+		width: 6px;
 	}
 
 	.theScroll::-webkit-scrollbar-thumb{
 		border-radius: 10px;
 		-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-		background: rgba(0,0,0,0.2);
+		background: rgba(235, 233, 233,0.2);
 	}
 
 	.theScroll::-webkit-scrollbar-track{

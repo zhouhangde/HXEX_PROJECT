@@ -14,6 +14,7 @@ import VueSocketio from 'vue-socket.io'
 import echarts from 'echarts'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import store from './store'
+
 import {Slider,Input,Row,Col,Button,Form,FormItem,Radio,RadioGroup,Select,Option,Tabs,TabPane,Dialog,Card,Icon,Upload,Carousel,CarouselItem,Pagination,DatePicker,MessageBox,Message,Switch,Progress,Timeline,TimelineItem,Tooltip,Popover} from 'element-ui'
 Vue.use(Form)
 Vue.use(FormItem)
@@ -43,6 +44,11 @@ Vue.use(Timeline)
 Vue.use(TimelineItem)
 Vue.use(Tooltip)
 Vue.use(Popover)
+
+// import layer from 'vue-layer'
+// Vue.prototype.$layer = layer(Vue);
+
+
 // Vue.use(MessageBox)
 // Vue.use(Message)
 // import iView from  'iview';
