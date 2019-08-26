@@ -1,7 +1,7 @@
 <template>
   <div class="k-line-area bg-1d1d29">
     <div class="flex ft12 top_bg">
-      <span class="ft16 bold flex alcenter c_symbol" style="color: #D2D6EC !important;">{{$store.state.symbol}}</span>
+      <span class="ft16 bold flex alcenter c_symbol zh_c_symbol" style="">{{$store.state.symbol}}</span>
       <span class="flex column alcenter center">
         <span class="bold ft16" :style="{color:parseFloat(change)>0?'#41B37D':'#D74E5A'}">{{close}}</span>
         <span class="gray_color bold">≈{{now_cny_price}} CNY</span>
@@ -1005,9 +1005,9 @@ export default {
 .gray_color {
   color: #61688a;
 }
-.bold_gray {
-  color: #b0b8db;
-}
+// .bold_gray {
+//   color: #b0b8db;
+// }
 .k-line-area {
   > .flex {
     span {

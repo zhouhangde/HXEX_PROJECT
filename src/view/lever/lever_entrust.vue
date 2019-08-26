@@ -1,7 +1,7 @@
 <template>
 	<div class="detail">
 <!--		合约持仓-->
-		<div class="title fColor1 topshadow ">
+		<div class="title fColor1 topshadow zh_title">
 
 			<div class="inblock ">
 				<span  >{{$t('lever.lvchi')}}</span>
@@ -12,7 +12,7 @@
 			<leverTransactions></leverTransactions>
 		</div>
 <!--交易记录-->
-		<div class="title fColor1 topshadow">
+		<div class="title fColor1 topshadow zh_title">
 			<div class="inblock ">
 				<span >{{$t('lever.tdrecord')}}</span>
 				<!--				<leverList></leverList>-->
@@ -167,7 +167,7 @@
 		height: 48px;
 		line-height: 46px;
 		padding: 0 40px 0 30px;
-		background: #131625!important;
+		/* background: #131625!important; */
 		color: #A8ADCC!important;
 	}
 

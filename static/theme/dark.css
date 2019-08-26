@@ -91,3 +91,36 @@ body .buy_list:nth-child(odd) {
 body .his_list:nth-child(odd) {
   background: #131625 !important;
 }
+
+/* 黑夜模式 */
+.zh_buy_multiple{
+  background-color: #171b2b;
+}
+.tabtitle {
+  background-color: #131625;
+}
+body .c_symbol.zh_c_symbol{
+  color: #D2D6EC !important;
+}
+.handicap li{
+  color: #d2d6ec;
+}
+.bold_gray {
+  color: #b0b8db;
+}
+
+.zh_content{
+  background-color:#252a44 !important
+}
+
+.zh_title{
+  background: #131625!important;
+}
+
+body .wrap.zh_title{
+  background: #131625!important;  
+}
+
+.active {
+  color: white;
+}

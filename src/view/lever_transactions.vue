@@ -1,5 +1,5 @@
 <template>
-	<div class="wrap bg-part" >
+	<div class="wrap bg-part zh_title" >
 		<em class="lever-header fColor1 mb15 mt5" style="margin-left: 10px">{{$t('lever.risk')}}：{{riskRate}}</em>
 		<em class="total-pro fColor1 clearfix" >
 			<p class="fl" style="margin-left: 10px">
@@ -658,7 +658,7 @@
 	}
 	.wrap {
 		min-height: 300px;
-		background: #171b2b !important;
+		/* background: #171b2b !important; */
 		/*width: 97%;*/
 		/*margin: 100px auto;*/
 		/*padding: 30px;*/

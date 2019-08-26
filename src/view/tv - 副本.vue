@@ -845,9 +845,9 @@ export default {
 .gray_color{
   color: #b2b8bd;
 }
-.bold_gray{
-  color: #828280
-}
+// .bold_gray{
+//   color: #828280
+// }
 .k-line-area{
 	>.flex{
 		span{

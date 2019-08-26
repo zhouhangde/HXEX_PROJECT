@@ -989,13 +989,13 @@
 		padding: 0 25px;
 	}
 
-	.tabtitle {
+	/* .tabtitle {
 		background-color: #131625;
-	}
+	} */
 
-	body .bdb_blue {
+	/* body .bdb_blue {
 		border-bottom: 2px solid #131625 !important;
-	}
+	} */
 
 	.tabtitle .active {
 		font-weight: bold;

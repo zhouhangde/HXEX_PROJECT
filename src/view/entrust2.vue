@@ -66,7 +66,7 @@
 
 				</div>
 				<!--历史委托&&币种信息-->
-				<div class="content " style="height: 6px; background-color:#252a44 !important ">
+				<div class="content zh_content" style="height: 6px; ">
 
 				</div>
 				<!---历史委托--->

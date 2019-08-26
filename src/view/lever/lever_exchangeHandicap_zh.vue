@@ -253,7 +253,7 @@
 	}
 
 	.handicap li {
-		color: #d2d6ec;
+		/* color: #d2d6ec; */
 		font-size: 14px;
 		padding: 8px 10px;
 		cursor: pointer;

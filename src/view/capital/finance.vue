@@ -80,11 +80,11 @@
 						<p class="flex1 tc">{{item.btc_balance}}(BTC) ≈ {{item.rate_balance | tofixed}}(CNY)</p>
 						<!-- <p class="flex1 tc">{{item.lock_position}}</p> -->
 						<p class="flex1 tr operation">
-              <span
-				  v-if="item.is_recharge==0"
-				  @click="noopen"
-				  class="no_open"
-			  >{{$t('account.charging')}}</span>
+							<span
+								v-if="item.is_recharge==0"
+								@click="noopen"
+								class="no_open"
+							>{{$t('account.charging')}}</span>
 							<span
 								class="txt_blue"
 								v-if="item.is_recharge==1"
@@ -146,15 +146,19 @@
 					<div class="hide_div bdr-part" v-if="index == active01">
 						<p class="fColor2 ft12 mb15">{{$t('account.whaddress')}}</p>
 						<!-- <input class="address_inp clr-part  mb30" type="text" v-model="address" /> -->
-						<select class="address_inp clr-part mb30" v-model="address" @change="sel_add">
-							<option value>{{$t('account.chaddress')}}</option>
-							<option
-								:value="item.address"
-								v-for="(item,index) in addressList"
-								:key="index"
-							><span>{{item.address}}</span> <span
-								class="ml20">{{$t('set.remarks')}}：{{item.notes}}</span></option>
-						</select>
+						<div style="position: relative;">
+                            <input type="text" v-model="address" placeholder="选择提币地址" style="position: absolute;background-color: #fff; width: 97%;height: 59%;text-indent: 12px;top: 1px;left: 1px;bottom: 1px;"/>
+							<select class="address_inp clr-part mb30" v-model="address" @change="sel_add">
+								<option value>{{$t('account.chaddress')}}</option>
+								<option
+									:value="item.address"
+									v-for="(item,index) in addressList"
+									:key="index"
+								><span>{{item.address}}</span> <span
+									class="ml20">{{$t('set.remarks')}}：{{item.notes}}</span></option>
+							</select>
+						</div>
+						
 						<!--地址标签-->
 						<div v-if="item.memo_show == '1'">
 							<p class="fColor2 ft12 mb15 flex between alcenter">
@@ -747,10 +751,10 @@
 				var min_number = this.minnumber;
 				var thisid = this.thisid;
 				//console.log(rate);
-				// if(!address){
-				//     layer.alert(that.$t('lay.caddress'));
-				//     return;
-				// }
+				if(!address){
+				    layer.alert(that.$t('lay.caddress'));
+				    return;
+				}
 				if (!number) {
 					layer.alert(that.$t("lay.cnumber"));
 					return;

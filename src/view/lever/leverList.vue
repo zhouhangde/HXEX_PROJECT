@@ -1,5 +1,5 @@
 <template>
-	<div class="wrap bg-part">
+	<div class="wrap bg-part zh_title">
 		<div class="tab-header">
 			<span :class="[{'active':status == 0}]" @click="tabClick(0)">{{$t('lever.listin')}}</span>
 <!--			<span :class="[{'active':status == 1}]" @click="tabClick(1)">{{$t('lever.tdin')}}</span>-->
@@ -266,16 +266,16 @@
 	};
 </script>
 <style scoped>
-	.active {
+	/* .active {
 		color: white;
-	}
+	} */
 	.fColor1 {
 		color: #b0b8db;
 	}
 
 	.wrap {
 		min-height: 500px;
-		background: #171b2b !important;
+		/* background: #171b2b !important; */
 		/*background: #1a243b;*/
 		/*width: 97%;*/
 		/*margin: 30px auto;*/

@@ -114,7 +114,7 @@
           <!--提币区-->
           <div class="hide_div bdr-part" v-if="index == active01">
             <p class="fColor2 ft12 mb15 flex between alcenter"><span>{{$t('account.whaddress')}}</span><span>备注：{{note}}</span></p>
-            <!-- <input class="address_inp clr-part  mb30" type="text" v-model="address" /> -->
+            123412341
             <select class="address_inp clr-part mb30" v-model="address">
               <option value>{{$t('account.chaddress')}}</option>
               <option

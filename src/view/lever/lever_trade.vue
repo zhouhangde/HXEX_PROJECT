@@ -31,7 +31,7 @@
 							>
 						</div>
 						<label>{{$t('lever.timed')}}：</label>
-						<select class="buy_multiple" v-model="multiple_buy" @change="selectMuit('buy')">
+						<select class="buy_multiple zh_buy_multiple" v-model="multiple_buy" @change="selectMuit('buy')">
 							<option
 								v-for="(item,index) in multipleList"
 								:key="index"
@@ -46,7 +46,7 @@
 						<div class="flex share-total">
 								<input
 									type="number"
-									class="share-input"
+									class="share-input zh_buy_multiple"
 									v-model="shareNumber_buy"
 
 									:placeholder='$t("lever.handbuy")+ minNum+ currency_name'
@@ -88,7 +88,7 @@
 							>
 						</div>
 						<label>{{$t("lever.timed")}}：</label>
-						<select class="buy_multiple" v-model="multiple_sell" @change="selectMuit('sell')">
+						<select class="buy_multiple zh_buy_multiple" v-model="multiple_sell" @change="selectMuit('sell')">
 							<option disabled value>{{$t("lever.ptimes")}}</option>
 							<option
 								v-for="(item,index) in multipleList"
@@ -105,7 +105,7 @@
 						<div class="flex share-total">
 							<input
 								type="number"
-								class="share-input"
+								class="share-input zh_buy_multiple"
 								v-model="shareNumber_sell"
 								:placeholder='$t("lever.handsell")+ minNum+ currency_name'
 								@input="changeValue('sell')"
@@ -649,7 +649,7 @@
 		font-size: 12px;
 		line-height: 35px;
 		border-radius: 2px;
-		background-color: #171b2b;
+		/* background-color: #171b2b; */
 		color: #b0b8db;
 	}
 
@@ -679,7 +679,7 @@
 		line-height: 35px;
 		border-radius: 2px;
 		color: #b0b8db;
-		background-color: #171b2b;
+		/* background-color: #171b2b; */
 		/*width: 72%;
 		background: #f2f3f8;
 		color: #333;
@@ -832,7 +832,7 @@
 		font-size: 12px;
 		line-height: 35px;
 		border-radius: 2px;
-		background-color: #171b2b;
+		/* background-color: #171b2b; */
 		/*border: 1px solid #ccc;
 		border-radius: 2px;
 		font-size: 14px;
