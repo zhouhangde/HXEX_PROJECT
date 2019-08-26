@@ -58,13 +58,13 @@
                   </div>
                 </div>-->
 			</div>
-			<div class="header-r flex ft14">
+			<div class="header-r flex ft14" style="font-size: 18px;">
 				<!--				未登录之前-->
 				<div v-if="!account_number.length" class="flex">
 					<router-link to="/components/login"><span class="login_btn">{{$t('header.in')}}</span></router-link>
-					<router-link to="/components/register"><span class="register_btn">{{$t('header.up')}}</span>
+					<router-link to="/components/register" style="margin-left:15px"><span class="register_btn">{{$t('header.up')}}</span>
 					</router-link>
-					<div style="margin-left: 10px">
+					<div style="margin-left: 15px">
 						<el-tooltip placement="bottom" effect="light" title="公告中心">
 							<div slot="content">
 								<div class="flex ">
@@ -94,7 +94,7 @@
                             <el-em><i class="fa fa-bell" aria-hidden="true"></i></el-em>
 						</el-tooltip>
 					</div>
-					<div style="margin-left: 10px">
+					<div style="margin-left: 15px">
 						<a href="https://51gsc.com/app/JJS0"><i class="fa fa-download" aria-hidden="true"></i></a>
 					</div>
 				</div>

@@ -50,7 +50,7 @@
 				</div>
 				<!-- <router-link to="/userCenter/anquan" exact class="block"> -->
 				<div class="router_link">
-
+                    <!-- 资金 -->
 					<router-link to="/userCenter/security" exact class="block">
 						<img src="../assets/images/anquan.png" alt="">
 						<span>{{$t('uc.safe')}}</span>

@@ -9,7 +9,7 @@
 			</div>
 <!--			tv和实时成交的k线图-->
 			<div class="main-m flex " style="width:84%;overflow: hidden;">
-				<div class="chart_wrap flex column bgWhite part-bg" style="width:62%;margin-right:6px;">
+				<div class="chart_wrap flex column bgWhite part-bg" style="width:81%;margin-right:6px;">
 					<!-- <chart></chart> -->
 					<div style="min-width:67%; height: 510px;" class="bg-part part-bg tv_wrap" >
 						<!--<kline></kline>-->
@@ -37,7 +37,7 @@
 				</div> -->
 
 <!-- 外部的币种数据和新闻 -->
-				<div class="flex column bgWhite part-bg" style="height:100%; width:19%;">
+				<!-- <div class="flex column bgWhite part-bg" style="height:100%; width:19%;">
                         <p style="color: #d2d6ec;font-size: 14px;padding: 8px 10px;cursor: pointer">盘口情况</p>
 						<p style="color: rgb(201, 182, 182);font-size: 14px;padding: 8px 10px;font-size: 13px;cursor: pointer">数据来源：取自各大交易所多空比例，仅供参考</p>
 					    <p style="color: #d2d6ec;font-size: 14px;padding: 8px 10px;display:flex;align-items: center;" v-if="currentName == 'btc'">
@@ -89,10 +89,9 @@
 							<span style="padding: 5px 10px;border: 1px solid rgba(1, 144, 118, 0.2);">空</span>
 						</p>
                         
-						<!-- 新闻 -->
+						
 						<p style="padding:3px 10px;color: #fff;font-size: 15px;text-align: center;">快讯</p>
 						<div style="height: 690px;overflow: auto;">
-							<!-- v-for="(item,index) in newsDataList" :key="index" -->
                               <ul style="padding: 8px 10px;" v-for="(item,index) in newsDataList" :key="index">
 								  <li style="padding: 8px 10px;color: #fff;font-size: 13px; border: 1px solid #585656;">
 									  <p style="padding: 8px 10px;">{{item.createDate.time | formatDate}}</p>
@@ -103,7 +102,7 @@
 							  </ul>
 						</div>
 						
-				</div>
+				</div> -->
 <!-- 外部的币种数据和新闻 -->
 
                  
@@ -194,7 +193,7 @@
 
             //调用新闻
 			this.getFlashnew()
-
+              
 
 		},
 		filters: {

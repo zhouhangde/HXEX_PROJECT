@@ -112,7 +112,7 @@
 					<div class="hide_div bdr-part" v-if="index == active">
 						<p class="fColor2 ft12">{{$t('account.cgaddress')}}</p>
 						<p class="mt50 mb50">
-							<span class="ft18 excharge_address" :class="{'bg':flags}">{{excharge_address}}</span>
+							<span class="ft18 excharge_address" style="width: 715px;overflow: hidden;display: inline-block;word-wrap: break-word;" :class="{'bg':flags}">{{excharge_address}}</span>
 							<span id="copy" @click="copy" class="copy ft14 txt_blue">{{$t('account.copy')}}</span>
 							<span class="ewm_wrap">
                 <span class="ewm ft14 txt_blue" @click="show_ewm">{{$t('account.code')}}</span>
