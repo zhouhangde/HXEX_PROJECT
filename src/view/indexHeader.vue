@@ -58,8 +58,8 @@
                   </div>
                 </div>-->
 			</div>
-			<div class="header-r flex ft14" style="font-size: 18px;">
-				<!--				未登录之前-->
+			<div class="header-r flex ft14" >
+				<!--未登录之前-->
 				<div v-if="!account_number.length" class="flex">
 					<router-link to="/components/login"><span class="login_btn">{{$t('header.in')}}</span></router-link>
 					<router-link to="/components/register" style="margin-left:15px"><span class="register_btn">{{$t('header.up')}}</span>
@@ -183,7 +183,7 @@
 									</ul>
 								</div>
 							</div>
-                            <el-em><i class="fa fa-user-circle-o" aria-hidden="true"></i></el-em>
+                            <el-em><i class="fa fa-user-circle-o" style="font-size:18px" aria-hidden="true"></i></el-em>
 						</el-tooltip>
 					</div>
 
@@ -215,12 +215,12 @@
 							</div>
 
 
-							<el-em><i class="fa fa-bell" aria-hidden="true"></i></el-em>
+							<el-em><i class="fa fa-bell" style="font-size:18px" aria-hidden="true"></i></el-em>
 						</el-tooltip>
 					</div>
 					<!--					下载-->
 					<div style="margin-left: 20px">
-						<a href="https://51gsc.com/app/JJS0"><i class="fa fa-download" aria-hidden="true"></i></a>
+						<a href="https://51gsc.com/app/JJS0"><i class="fa fa-download" style="font-size:18px" aria-hidden="true"></i></a>
 					</div>
 
 				</div>
