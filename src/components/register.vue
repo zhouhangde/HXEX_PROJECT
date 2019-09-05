@@ -148,7 +148,7 @@ export default {
           
       } else {
         console.log("电脑登陆")
-          //跳转pc端页面
+          //跳转pc端页面         
           // window.location.href="http://f.jcngame.com/fanfan20171208//fanmai/index.html";
       }
     },
